@@ -1,8 +1,8 @@
 <CsoundSynthesizer>
 <CsOptions>
--d -odac:system:playback_ -+rtaudio="jack" 
--B 4096
-;-orisset.wav -W
+;-d -odac:system:playback_ -+rtaudio="jack" 
+;-B 4096
+-orisset.wav -W -d
 </CsOptions>
 <CsInstruments>
 
