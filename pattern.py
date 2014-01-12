@@ -65,12 +65,36 @@ start_time = 0
 dur = 0.8
 its = 4 #how many times to repeat the process
 
-rr.wp(tempo_1, tempo_2, step, total_steps, start_time, dur, kick_pattern, 2, its)
-rr.wp(tempo_1, tempo_2, step, total_steps, start_time, dur, snare_pattern, 2,its)
-rr.wp(tempo_1, tempo_2, step, total_steps, start_time, dur, hihat_pattern, 1, its)
-rr.wp(tempo_1, tempo_2, step, total_steps, start_time, dur, clap_pattern, 2, its)
-rr.wp_mel(tempo_1, tempo_2, step, total_steps, start_time, 3, mel_pat, 1, its, 5)
-rr.wp_mel(tempo_1, tempo_2, step, total_steps, start_time, 3, mel_pat_2, 2, its, 5)
+rr.wp(
+		tempo_1, tempo_2, step, total_steps, 
+		start_time, dur, kick_pattern, 2, its, "kick"
+	)
+
+rr.wp(
+		tempo_1, tempo_2, step, total_steps, 
+		start_time, dur, snare_pattern, 2,its, "snare"
+	)
+
+rr.wp(
+		tempo_1, tempo_2, step, total_steps, 
+		start_time, dur, hihat_pattern, 1, its, "hihat"
+	)
+
+rr.wp(
+		tempo_1, tempo_2, step, total_steps, 
+		start_time, dur, clap_pattern, 2, its, "clap"
+	)
+
+#write melody
+rr.wp_mel(
+		tempo_1, tempo_2, step, total_steps, 
+		start_time, 3, mel_pat, 1, its, 5, "mel_pat_1"
+		)
+
+rr.wp_mel(
+		tempo_1, tempo_2, step, total_steps, 
+		start_time, 3, mel_pat_2, 2, its, 5, "mel_pat_2"
+		)
 
 
 
