@@ -1,14 +1,36 @@
 Risset Rhythm
 By Paul Batchelor
 
-To run this program, run the command:
+The Risset Rhythm is a fantastic audio illusion invented by Jean Claude Risset. It is a rhythm which gives the impression of a infinitely slowing down tempo.
 
-python pattern.py > out.sco
+This implementation for the Risset rhythm has the source code for the audio, as well as code to generate corresponding visuals.
 
-then run:
+In order to compile just the audio, you will need:
 
-csound drums.csd
+Your own drum samples, named kick.wav, rim.wav, hat.wav, and clap.wav
+Csound 5
+Python 2.7
+Make
 
-This should produce a file called risset.wav in the directory. 
+To compile the video, you will additionally need:
+gcc
+libcairo
+mencoder
+perl
 
-Please note that this has only been tested on a Linux computer, but it should technically work on OSX. 
+
+To build everything, run the command:
+
+"make all"
+
+To build the audio portion only, run the command:
+
+"make audio_only" 
+
+To clean the project, run the command:
+
+"make clean"
+
+
+
+

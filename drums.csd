@@ -72,16 +72,16 @@ endin
 instr 4	;TR-909Clap.wav
 iamp = $AMP
 
-ichan filenchnls "TR-909Clap.wav"
+ichan filenchnls "clap.wav"
 print ichan
 
 if ichan == 2 goto stereo
-a1 diskin2 "TR-909Clap.wav", 1
+a1 diskin2 "clap.wav", 1
 a2 = a1
 goto output
 
 stereo:
-a1, a2 diskin2 "TR-909Clap.wav", 1
+a1, a2 diskin2 "clap.wav", 1
 
 output:
 outs a1 * iamp, a2 * iamp
